@@ -17,7 +17,7 @@ const Gym = ({gym}) => {
           <div className="gym-image"><img src={gym.image_url}></img>
           </div>   
           <div className="gym-name"><h3><b>{gym.name}</b></h3></div>
-          <div className="gym-score"><h3><b>{gym.avg_score}</b></h3></div>
+          <div className="gym-score"><h5><b>Review Score: {gym.avg_score}</b></h5></div>
          
           <div className="gym-link">
            <Link to={`/Gyms/${gymSlug}`}> 

@@ -1,16 +1,15 @@
-export function addReview(state) {
+export function addReview(review) {
     
     return (dispatch) => {
-        console.log(`Hola from addReview reducer : ${state.title}`);
+        console.log(`Hola from addReview reducer : ${review.title}`);
         fetch(`/api/v1/reviews/`, {
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
-            method: 'POST',
-            body: JSON.stringify({state})
+            body: JSON.stringify({review}),
         })
-        
         .then(res => res.json())
         .then(review => dispatch({type: 'ADDING REVIEWS', review}))
     }

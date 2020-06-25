@@ -29,7 +29,7 @@ class Component1 extends Component {
           </div> 
            
            <h4>{this.props.gym.name}</h4>
-           
+           <h4>{this.props.gym.id}</h4>
            
            <Component2 gymId={this.props.gym.id}/>
         
