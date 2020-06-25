@@ -1,9 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Gyms from './Gyms';
+import Component1 from '../components/Component1';
+
 const Gym = ({gym}) => {
     const gymSlug = gym.slug;
+    
+    
+    
+   
+    
     return (
+        
+       
         <div className="col-sm-4 p-3 border bg-light  ">
           <div className="gym-image"><img src={gym.image_url}></img>
           </div>   
@@ -12,8 +21,11 @@ const Gym = ({gym}) => {
          
           <div className="gym-link">
            <Link to={`/Gyms/${gymSlug}`}> 
-          <button type="button" class="btn btn-secondary"><h3>See Gym </h3></button>
+          <button type="button" className="btn btn-secondary"><h3>See Gym </h3></button>
            </Link></div>
+        
+           
+        
         </div> 
     )
 }

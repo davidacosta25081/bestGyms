@@ -38,5 +38,5 @@ class Gyms extends Component {
 
 
 export default connect(state => ({
-  gyms: state.gyms }) , {fetchGyms} )
+  gyms: state.gymsReducer.gyms }) , {fetchGyms} )
   (Gyms);

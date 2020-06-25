@@ -1,20 +1,22 @@
-export default function gymReducer (state = { gyms: [], requesting: false },action)  
+export default function gymReducer (state = { gym: [], requesting: false },action)  
   {
+    
     switch(action.type) {       
    
-    case 'LOADING GYMS' :
+    case 'LOADING GYM' :
       return {
-        ...state,
-        gyms: [...state.gyms],
+       
         requesting: true 
     }    
 
-    case 'ADDING GYMS' :
-      return {
-        ...state, 
-        gyms: action.gyms,
-        requesting: false
-      }
+    case 'ADDING GYM' :
+        
+    console.log(`Hi from the gymReducer ${action.gym.name}`)
+    return  action.gym 
+        
+    
+        
+      
       
     default: 
     return state;  
