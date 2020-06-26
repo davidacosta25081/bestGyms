@@ -11,7 +11,7 @@ export default function gymsReducer (state = { gyms: [], requesting: false },act
 
     case 'ADDING GYMS' :
     return {
-        ...state, 
+        ...state,
         gyms: action.gyms,
         requesting: false
       }

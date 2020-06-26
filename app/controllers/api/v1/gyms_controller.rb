@@ -51,7 +51,7 @@ module Api::V1
 
 
      def gym_params 
-       params.require(:gym).permit(:name, :image_url)  
+       params.require(:gym).permit(:name, :image_url, :description)  
      end  
 
 

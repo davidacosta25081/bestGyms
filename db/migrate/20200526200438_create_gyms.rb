@@ -4,7 +4,7 @@ class CreateGyms < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :image_url
       t.string :slug
-
+      t.string :description
       t.timestamps
     end
   end

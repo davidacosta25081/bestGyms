@@ -13,10 +13,10 @@ nav {
 
 
 .nav-links {
-  width:40%;
+  width:10%;
   display:flex;
   justify-content: space-around;
-  align-items: center;  
+  align-items: left;  
   list-style: none;
   
 }
@@ -28,7 +28,26 @@ nav {
   margin-top: 0px;
 }
 
-#h3 {
+.card {
+align-items: center;
+width: 60%;
+margin-left: 20%;
+}
 
+.form-group {
+
+  align-items: center;
+  width: 60%;
+  height: 40%;
+  
+ 
+}
+
+
+select#score {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+  font-size: 20pt;
 
 }

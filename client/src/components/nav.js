@@ -13,14 +13,12 @@ const Nav = () => {
   
   return (
     <nav> 
-      <h3>bestGyms!!</h3>
+      <h1>GYM &nbsp;  RAT-E</h1>
       <ul className="nav-links">
         <Link style={navStyle} to="/">
-        <li><h4>Gyms</h4></li>
+        <li><h2>HOME</h2></li>
         </Link>
-        <Link style={navStyle} to="/Gyms/:slug"> 
-        <li><h4>Gym</h4></li>
-        </Link>
+        
       </ul> 
       </nav>
 
