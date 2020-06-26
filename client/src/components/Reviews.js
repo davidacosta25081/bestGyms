@@ -1,25 +1,30 @@
 import React from 'react'
 
 
+
 const Reviews = (props) => {
     
     
     console.log (props.reviews);
     console.log (props.gymId);
    
-  return (
+  
+  
+  
+    return (
   
   
     
     
-    <div className="reviews">
+ 
+ <div className="reviews">
         
-  {props.reviews.map(review =>   
+  {props.reviews.map(review => {  if (review.gym.id === props.gymId) {
     
     
-  <li key={review.id}> <b>{review.title} : </b> {review.description} </li> )}     
+  return <li key={review.id}> <h2>{review.title} : {review.description}</h2> </li>}})}     
      
-     
+  
   
   
     </div> 

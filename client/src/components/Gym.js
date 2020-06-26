@@ -13,7 +13,7 @@ const Gym = ({gym}) => {
         
        
         <div className="col-sm-4 p-3 border bg-light  ">
-          <div className="gym-image"><img src={gym.image_url}></img>
+          <div className="gym-image"><img src={gym.image_url} alt="logo"></img>
           </div>   
           <div className="gym-name"><h3><b>{gym.name}</b></h3></div>
           <div className="gym-score"><h5><b>Review Score: {gym.avg_score}</b></h5></div>

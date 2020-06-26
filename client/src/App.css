@@ -32,6 +32,7 @@ nav {
 align-items: center;
 width: 60%;
 margin-left: 20%;
+
 }
 
 .form-group {
@@ -49,5 +50,18 @@ select#score {
   margin-bottom: 20px;
   width: 60%;
   font-size: 20pt;
+
+}
+
+.score {
+
+ text-align: center; 
+}
+
+
+
+input.btn-secondary {
+
+  margin-bottom: 80px;
 
 }

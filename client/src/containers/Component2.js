@@ -49,19 +49,19 @@ class Component2 extends Component {
 
 
 
-    <div class="form-group" >
+    <div className="form-group" >
     
     <form  onSubmit={this.handleSubmit}>
        <p>
         <label></label>
-        <input type="text" class="form-control" id="title" onChange={this.handleChange} placeholder="Title" />     
+        <input type="text" className="form-control" id="title" onChange={this.handleChange} placeholder="Title" />     
       </p>
       <p>
         <label> </label>
-        <input type="text" class="form-control" id="description" onChange={this.handleChange} placeholder="Leave a comment" />     
+        <input type="text" className="form-control" id="description" onChange={this.handleChange} placeholder="Leave a comment" />     
       </p>
       <label>
-      <div class="card-header"> <h2><b>Rate This Gym</b> </h2> </div>
+      <div className="card-header"> <h2><b>Rate This Gym</b> </h2> </div>
           <select id="score"  onChange={this.handleChange}>
             <option id="score" value="1"> 1</option>
             <option id="score" value="2"> 2</option>
@@ -74,7 +74,7 @@ class Component2 extends Component {
         
         
         
-       <p><h2> <input type="submit" className="btn-secondary" /> </h2></p>
+        <h2> <p><input type="submit" className="btn-secondary" /></p> </h2>
       </form>
    
       <Reviews reviews={this.props.review} gymId={this.props.gymId} />
