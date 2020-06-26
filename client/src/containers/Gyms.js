@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import GymList from './GymList';
+import GymList from '../components/GymList';
 import {connect} from 'react-redux';
 import {fetchGyms} from '../actions/fetchGyms';
 

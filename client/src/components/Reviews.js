@@ -17,7 +17,7 @@ const Reviews = (props) => {
   {props.reviews.map(review =>   
     
     
-    <li key={review.id}> {review.title} {review.description} </li> )}     
+  <li key={review.id}> <b>{review.title} : </b> {review.description} </li> )}     
      
      
   
@@ -27,4 +27,5 @@ const Reviews = (props) => {
         
     )
   }
-export default Reviews;
+
+  export default Reviews;

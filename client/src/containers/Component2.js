@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {addReview} from '../actions/addReview';
-import Reviews from './Reviews';
+import Reviews from '../components/Reviews';
 
 
 class Component2 extends Component {
@@ -10,7 +10,7 @@ class Component2 extends Component {
 
         "title": '', 
         "description": '',
-        "score": '',
+        "score": '1',
         "gym_id": ''
     
         }

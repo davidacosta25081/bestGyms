@@ -27,7 +27,7 @@ class Component1 extends Component {
            
            <div class="card text-left p-3 mb-2 bg-light text-dark   "  >
            <div class="card-header">
-           <h1><b>{this.props.gym.name}</b> </h1>
+           <h1><b>{this.props.gym.name}</b></h1> <h3>{this.props.gym.avg_score}</h3>
             </div>
              <div class="card-body">
                

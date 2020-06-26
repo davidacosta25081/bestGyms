@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Gyms from './Gyms';
-import Component1 from '../components/Component1';
+
 
 const Gym = ({gym}) => {
     const gymSlug = gym.slug;
