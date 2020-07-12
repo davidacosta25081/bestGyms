@@ -1,20 +1,16 @@
 import React from 'react';
 import Gym from './Gym';
 
-const GymList = ({gyms}) => (
+const GymList = (props) => {
   
   
-  
-   <div className="GymListcontainer">
-  
-  <div className="row">
-  
-   {gyms.map(gym =>  < Gym key={gym.id} gym={gym} /> ) }       
-   
+  return (
+    <div className="GymListcontainer">
+      <div className="row">
+        {props.gyms.map(gym =>  <Gym key={gym.id} gym={gym}/>)}       
+      </div>
    </div>
-   </div>
-   
-  
-)
+   )
+}
 
 export default GymList;

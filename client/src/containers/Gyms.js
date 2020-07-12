@@ -10,33 +10,19 @@ class Gyms extends Component {
         this.props.fetchGyms()
     }
     
-  
-    
-    
     render() {
-      console.log(this.props.gyms);
-       
-    
-    return (
-      
      
-     
-    <div className="grid">
-     <GymList gyms={this.props.gyms}/>
-     </div>
-
-     
-    
-    
-    
-    
-    );
-  }  
+      return (
+        <div className="grid">
+          <GymList gyms={this.props.gyms}/>
+        </div>
+      );
+    }  
 };
 
 
 
 
 export default connect(state => ({
-  gyms: state.gymsReducer.gyms }) , {fetchGyms} )
-  (Gyms);
+gyms: state.gymsReducer.gyms }) , {fetchGyms} )
+(Gyms);

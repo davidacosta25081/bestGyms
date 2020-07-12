@@ -1,5 +1,4 @@
 import React  from 'react';
-
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Gyms from './containers/Gyms'
@@ -16,17 +15,16 @@ class App extends React.Component {
       
     <Router>
       <div className="App">
-       <Nav/>
+      <Nav/>
+       <Switch>
        <Route exact path="/" component={Gyms}/>
        <Route exact path="/gyms/:slug" component={Component1}/> 
-   
+       </Switch>
      </div>
    </Router>
     
-    );
-  
+  );
  }
-
 }
 
 export default App;

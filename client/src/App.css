@@ -40,8 +40,7 @@ margin-left: 20%;
   align-items: center;
   width: 60%;
   height: 40%;
-  
- 
+  padding: 30px 25px; 
 }
 
 
@@ -64,4 +63,17 @@ input.btn-secondary {
 
   margin-bottom: 80px;
 
+}
+
+
+.form-control {
+  height: 50px;
+  font-size: x-large;
+}
+
+
+select#score {
+
+  text-align: center;
+  text-align-last:center;
 }

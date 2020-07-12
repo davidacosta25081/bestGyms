@@ -6,12 +6,12 @@ export default function reviewReducer (state = { reviews: [], requesting: false 
         case 'LOADING REVIEWS' :
             return {
               ...state,
-              reviews: [...state.reviews],
+              reviews: action.reviews,
               requesting: true 
           }    
       
           case 'ADDING REVIEWS' :
-          console.log(state);
+            
           return {
               ...state, 
               reviews: [...state.reviews, action.review],
