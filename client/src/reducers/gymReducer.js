@@ -5,19 +5,12 @@ export default function gymReducer (state = { gym: [], requesting: false },actio
    
     case 'LOADING GYM' :
       return {
-       
-        requesting: true 
+       requesting: true 
     }    
 
     case 'ADDING GYM' :
+      return  action.gym 
         
-    
-    return  action.gym 
-        
-    
-        
-      
-      
     default: 
     return state;  
   }
