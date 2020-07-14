@@ -77,3 +77,20 @@ select#score {
   text-align: center;
   text-align-last:center;
 }
+
+
+.orderingButton {
+
+
+  color: #444444;
+  background: #F3F3F3;
+  border: 1px #DADADA solid;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 30pt;
+  text-align: center;
+  outline: none;
+   margin: 100px 0px 15px;
+
+}
