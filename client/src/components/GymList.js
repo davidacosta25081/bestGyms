@@ -8,19 +8,20 @@ class GymList extends React.Component {
   state = { gyms: [], toggle: true }
   
   orderedList = () => {
+    let gymsList = [...this.props.gyms]
     this.setState({ gyms: 
-    this.props.gyms.sort(function(a, b){
-      if(a.name < b.name) { return -1; }
-      if(a.name > b.name) { return 1; }
+    gymsList.sort(function(a, b){
+      if(a.name.toLowerCase() < b.name.toLowerCase()) { return -1; }
+      if(a.name.toLowerCase() > b.name.toLowerCase()) { return 1; }
       return 0;
-    }) , toggle: false })
+    }) , toggle: !this.state.toggle})
   }
   
   
-    render () {
-      
+   render () {
+    console.log(this.props.gyms)
       return (
-        this.state.toggle ?  
+        this.state.toggle?  
 
         <div className="GymListcontainer">
           <div className="row">
@@ -32,6 +33,7 @@ class GymList extends React.Component {
         <div className="GymListcontainer">
           <div className="row">
             {this.state.gyms.map(gym =>  <Gym key={gym.id} gym={gym}/>)}      
+            <div><button className='orderingButton' onClick={this.orderedList}>ORIGINAL</button></div>
           </div>
         </div>
       )

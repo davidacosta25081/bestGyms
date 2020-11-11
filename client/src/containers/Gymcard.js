@@ -4,7 +4,7 @@ import {fetchGym} from '../actions/fetchGym';
 import Component2 from './Component2';
 
 
-class Component1 extends Component {
+class Gymcard extends Component {
     
     componentDidMount() {
         this.props.fetchGym(this.props.match.params.slug);
@@ -16,7 +16,7 @@ class Component1 extends Component {
    render() {
         
     return (
-        <div className="component1">
+        <div className="Gymcard">
           <div className="gym-image"><img src={this.props.gym.image_url} alt="logo"></img></div> 
             <div className="card text-left p-3 mb-2 bg-light text-dark">
               <div className="card-header">
@@ -40,4 +40,4 @@ class Component1 extends Component {
 
 export default connect(state => ({
     gym: state.gymReducer}) , {fetchGym} )
-    (Component1);
+    (Gymcard);
