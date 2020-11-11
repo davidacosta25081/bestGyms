@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {fetchGym} from '../actions/fetchGym';
-import Component2 from './Component2';
+import RateCard from './RateCard';
 
 
 class Gymcard extends Component {
@@ -29,7 +29,7 @@ class Gymcard extends Component {
             </div>
             <div className="card  p-3 mb-2 bg-light text-dark"   >  
               <div className="card-header"> <h2><b>LEAVE A COMMENT</b></h2></div>
-                <Component2 gymId={this.props.gym.id} gymName={this.props.match.params.slug}/>    
+                <RateCard gymId={this.props.gym.id} gymName={this.props.match.params.slug}/>    
             </div>
         </div>
      );

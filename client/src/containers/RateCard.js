@@ -7,7 +7,7 @@ import Reviews from '../components/Reviews';
 import {bindActionCreators} from 'redux';
 
 
-class Component2 extends Component {
+class RateCard extends Component {
 
 
   componentDidMount(){
@@ -87,4 +87,4 @@ function mapDispatchToProps(dispatch){
 
 export default connect(state => ({
   reviews: state.reviewReducer.reviews}) , mapDispatchToProps )
-  (Component2);
+  (RateCard);
