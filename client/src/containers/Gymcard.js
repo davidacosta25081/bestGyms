@@ -28,7 +28,7 @@ class Gymcard extends Component {
               </div>
             </div>
             <div className="card  p-3 mb-2 bg-light text-dark"   >  
-              <div className="card-header"> <h2><b>Leave a Comment</b></h2></div>
+              <div className="card-header"> <h2><b>Leave a Comment :</b></h2></div>
                 <RateCard gymId={this.props.gym.id} gymName={this.props.match.params.slug}/>    
             </div>
         </div>
