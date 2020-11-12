@@ -2,7 +2,7 @@
 import Gym from './Gym';
 import React, { Component } from 'react';
   
-class GymList extends React.Component {
+className GymList extends React.Component {
   
   
   state = { gyms: [], toggle: true }
